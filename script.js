@@ -32,10 +32,16 @@ const navSlide = () => {
 // Smooth Scroll for modern browsers
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const targetId = this.getAttribute('href');
+        if (targetId.startsWith('#')) {
+            e.preventDefault();
+            const element = document.querySelector(targetId);
+            if (element) {
+                element.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
     });
 });
 
@@ -53,10 +59,10 @@ if (form) {
 window.addEventListener('scroll', () => {
     const header = document.getElementById('header');
     if (window.scrollY > 50) {
-        header.style.padding = '10px 0';
+        header.style.padding = '5px 0';
         header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
     } else {
-        header.style.padding = '20px 0';
+        header.style.padding = '0';
         header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
     }
 });

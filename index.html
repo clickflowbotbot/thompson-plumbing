@@ -1,120 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional plumbing services in Sydney. Thompson Plumbing, owned by Mike Thompson, offers reliable residential and commercial plumbing solutions.">
-    <title>Thompson Plumbing | Expert Plumber Sydney</title>
+    <title>Thompson Plumbing | Expert Plumbers in Sydney, Australia</title>
+    <meta name="description" content="Thompson Plumbing offers reliable, professional plumbing services in Sydney. Specialising in maintenance, emergency repairs, and installations. Contact Mike Thompson today.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="container">
-            <div class="logo">THOMPSON <span>PLUMBING</span></div>
-            <button class="mobile-nav-toggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
-            </button>
+            <div class="logo">Thompson <span>Plumbing</span></div>
             <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="tel:0400000000" class="btn-nav">Call Now</a></li>
+                <li><a href="#contact" class="btn-nav">Get a Quote</a></li>
             </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero-section">
-            <div class="hero-overlay"></div>
-            <img src="https://ytttxtzoazhogljousvc.supabase.co/storage/v1/object/public/site-assets/8c06373a-e869-4b32-b61a-0658d218b732/hero.png" alt="Thompson Plumbing Hero" class="hero-bg">
-            <div class="container hero-content">
-                <h1>Sydney's Most Trusted Plumbing Experts</h1>
-                <p>Reliable, professional, and local. Mike Thompson and his team are ready to handle all your plumbing needs 24/7.</p>
-                <div class="hero-btns">
-                    <a href="#contact" class="btn-primary">Get A Quote</a>
-                    <a href="#services" class="btn-secondary">Our Services</a>
+        <section id="home" class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://ytttxtzoazhogljousvc.supabase.co/storage/v1/object/public/site-assets/8c06373a-e869-4b32-b61a-0658d218b732/hero.png') center/cover no-repeat fixed;">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Expert Plumbing Services in Sydney</h1>
+                    <p>Reliable, local, and professional plumbing solutions for your home or business. Available for emergency call-outs.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn-primary">Book a Service</a>
+                        <a href="tel:0400000000" class="btn-secondary">Call 0400 000 000</a>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about-section">
-            <div class="container grid-2">
-                <div class="about-image">
-                    <img src="https://ytttxtzoazhogljousvc.supabase.co/storage/v1/object/public/site-assets/8c06373a-e869-4b32-b61a-0658d218b732/about.png" alt="Mike Thompson Plumbing">
-                </div>
-                <div class="about-text">
-                    <span class="sub-title">About Us</span>
-                    <h2>Owned & Operated by Mike Thompson</h2>
-                    <p>With years of experience serving the Sydney community, Thompson Plumbing has built a reputation for integrity and high-quality craftsmanship. We understand that plumbing issues can be stressful, which is why we provide transparent pricing and prompt service.</p>
-                    <p>Whether it's a leaky tap or a complete bathroom renovation, Mike personally ensures every job meets our gold standard of excellence.</p>
-                    <ul class="features">
-                        <li>✓ Licensed & Fully Insured</li>
-                        <li>✓ 24/7 Emergency Response</li>
-                        <li>✓ Upfront, Honest Pricing</li>
-                    </ul>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="about-image">
+                        <img src="https://ytttxtzoazhogljousvc.supabase.co/storage/v1/object/public/site-assets/8c06373a-e869-4b32-b61a-0658d218b732/about.png" alt="Mike Thompson Plumbing Professional" loading="lazy">
+                    </div>
+                    <div class="about-text">
+                        <span class="subtitle">About Us</span>
+                        <h2>Quality Craftsmanship by Mike Thompson</h2>
+                        <p>With years of experience serving the Sydney community, Thompson Plumbing provides top-tier plumbing solutions tailored to your needs. Owned and operated by Mike Thompson, we take pride in our punctuality, transparency, and high-quality workmanship.</p>
+                        <p>Whether it's a leaky tap, a hot water installation, or urgent emergency repairs, we treat every job with the same level of professional care and attention to detail.</p>
+                        <div class="features">
+                            <div class="feature">✓ Fully Licensed & Insured</div>
+                            <div class="feature">✓ Sydney Local Expertise</div>
+                            <div class="feature">✓ 100% Satisfaction Guaranteed</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="services-section">
+        <section id="services" class="services">
             <div class="container">
                 <div class="section-header">
-                    <span class="sub-title">What We Do</span>
-                    <h2>Our Plumbing Services</h2>
+                    <span class="subtitle">Our Expertise</span>
+                    <h2>Reliable Plumbing Solutions</h2>
                 </div>
                 <div class="grid-2 align-center">
                     <div class="services-list">
                         <div class="service-card">
                             <h3>Emergency Repairs</h3>
-                            <p>Burst pipes, gas leaks, or major flooding—we are available 24/7 to secure your home.</p>
+                            <p>Fast response for burst pipes, blocked drains, and urgent leaks 24/7.</p>
                         </div>
                         <div class="service-card">
-                            <h3>Drain Cleaning</h3>
-                            <p>Specialized equipment to clear stubborn blockages and prevent future issues.</p>
+                            <h3>Gas Fitting</h3>
+                            <p>Certified gas installation, leak detection, and appliance maintenance.</p>
                         </div>
                         <div class="service-card">
                             <h3>Hot Water Systems</h3>
-                            <p>Installation, maintenance, and repair of all major gas and electric hot water brands.</p>
+                            <p>Expert installation and repair of electric, gas, and solar hot water units.</p>
                         </div>
                         <div class="service-card">
-                            <h3>General Maintenance</h3>
-                            <p>Taps, toilets, and pipework—keeping your home's water systems running smoothly.</p>
+                            <h3>Kitchen & Bathroom</h3>
+                            <p>Full plumbing fit-outs for renovations and new residential builds.</p>
                         </div>
                     </div>
-                    <div class="services-img-wrapper">
-                        <img src="https://ytttxtzoazhogljousvc.supabase.co/storage/v1/object/public/site-assets/8c06373a-e869-4b32-b61a-0658d218b732/services.png" alt="Plumbing Services Sydney">
+                    <div class="services-image">
+                        <img src="https://ytttxtzoazhogljousvc.supabase.co/storage/v1/object/public/site-assets/8c06373a-e869-4b32-b61a-0658d218b732/services.png" alt="Plumbing Services" loading="lazy">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
+        <section id="contact" class="contact">
             <div class="container">
-                <div class="contact-box">
+                <div class="contact-wrapper">
                     <div class="contact-info">
-                        <h2>Get In Touch</h2>
-                        <p>Ready to start your project or need a quote? Contact Mike Thompson today.</p>
+                        <h2>Get a Free Quote</h2>
+                        <p>Need a plumber fast? Fill out the form or give Mike a call directly. We'll get back to you as soon as possible.</p>
                         <div class="contact-details">
-                            <div class="detail-item">
-                                <strong>Location:</strong> Sydney, NSW
-                            </div>
-                            <div class="detail-item">
-                                <strong>Phone:</strong> <a href="tel:0400000000">0400 000 000</a>
-                            </div>
-                            <div class="detail-item">
-                                <strong>Email:</strong> office@thompsonplumbing.com.au
-                            </div>
+                            <p><strong>Owner:</strong> Mike Thompson</p>
+                            <p><strong>Location:</strong> Sydney, NSW</p>
+                            <p><strong>Email:</strong> hello@thompsonplumbing.com.au</p>
+                            <p><strong>Phone:</strong> 0400 000 000</p>
                         </div>
                     </div>
-                    <form class="contact-form" id="plumbingForm">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="tel" placeholder="Phone Number">
-                        <textarea placeholder="How can we help?" rows="5" required></textarea>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="emergency">Emergency Repair</option>
+                                <option value="maintenance">General Maintenance</option>
+                                <option value="gas">Gas Fitting</option>
+                                <option value="hotwater">Hot Water</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Tell us about the job" required></textarea>
+                        </div>
                         <button type="submit" class="btn-primary">Send Message</button>
                     </form>
                 </div>
@@ -124,9 +136,9 @@
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">THOMPSON <span>PLUMBING</span></div>
-                <p>&copy; <span id="year"></span> Thompson Plumbing. All Rights Reserved. Fully Licensed Sydney Plumbers.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Thompson Plumbing Sydney. All rights reserved.</p>
+                <p>Designed for Efficiency. Built for Reliability.</p>
             </div>
         </div>
     </footer>

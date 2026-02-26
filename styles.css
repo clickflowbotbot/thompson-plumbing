@@ -36,6 +36,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    transition: var(--transition);
 }
 
 nav {
@@ -101,11 +102,12 @@ nav {
 }
 
 .hero {
-    height: 90vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     color: var(--white);
-    margin-top: 80px;
+    margin-top: 0;
+    padding: 120px 0 80px 0;
 }
 
 .hero-content {
@@ -149,6 +151,12 @@ nav {
 .btn-secondary {
     background: var(--white);
     color: var(--dark);
+}
+
+.btn-mobile-cta {
+    margin-right: 0;
+    width: 200px;
+    text-align: center;
 }
 
 .about {
@@ -277,6 +285,25 @@ footer {
     transition: all 0.3s ease;
 }
 
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 { opacity: 0; }
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 @media (max-width: 992px) {
     .about-grid, .contact-grid {
         grid-template-columns: 1fr;
@@ -303,9 +330,11 @@ footer {
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         padding-top: 50px;
+        z-index: 1001;
     }
     .nav-links li {
         margin: 20px 0;
+        opacity: 0;
     }
     .nav-links li a {
         margin-left: 0;
@@ -319,5 +348,17 @@ footer {
     }
     .nav-active {
         transform: translateX(0%);
+    }
+    .hero {
+        padding: 140px 0 100px 0;
+        text-align: center;
+    }
+    .btn-primary {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .btn-secondary {
+        width: 100%;
     }
 }

@@ -11,6 +11,7 @@ const navSlide = () => {
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = '';
+                link.style.opacity = '0';
             } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
             }
@@ -25,6 +26,10 @@ const navSlide = () => {
         link.addEventListener('click', () => {
             nav.classList.remove('nav-active');
             burger.classList.remove('toggle');
+            navLinks.forEach(l => {
+                l.style.animation = '';
+                l.style.opacity = '0';
+            });
         });
     });
 }
@@ -37,7 +42,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             e.preventDefault();
             const element = document.querySelector(targetId);
             if (element) {
-                element.scrollIntoView({
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const elementPosition = element.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - (headerHeight - 20);
+
+                window.scrollTo({
+                    top: offsetPosition,
                     behavior: 'smooth'
                 });
             }
